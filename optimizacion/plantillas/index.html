@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            font-family:  'Helevetica Neue', Helvetica;
+        }
+        body{
+            background:#41B3A3 ;
+        }
+        nav{
+            height: 40px;
+            background: #E27D60;
+        }
+        nav p{
+            width: 100ch;
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+            margin: auto;
+            padding-top:10px;
+        }
+        .container{
+            margin-left: 10%;
+        }
+        h1, h2{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .url-post{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        #post{
+            background: #ADAD;
+            color: #000;
+            width: 10ch;
+            height: 22px;
+            text-align: center;
+            padding-top: 5px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        #link{
+            background: #C38D9E;
+            margin-left: 20px;
+            height: 22px;
+            text-align: center;
+            padding: 5px 5px 0 5px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        footer{
+            height: 70px;
+            background: #E8A87C;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>OPTIMIZATION API</p>
+    </nav>
+    <div class="container">
+        <h1>
+            Introduction
+        </h1>
+        <p>
+            Welcome, with this API you can optimize the space usage of your trucks trying to reduce the spent fuel. <br>
+            Distributing the packages among the trucks maximizing the volume usage.
+        </p>
+        <h2>
+            Example
+        </h2>
+        <p>
+            The API receives a JSON inside the <span style="font-weight: bold;">POST body</span> <span style="text-decoration:underline;">request</span>:
+            <pre>
+                {{jsonStyle1}}
+            </pre>
+            After the request is processed it will <span style="text-decoration:underline;">response</span>:
+            <pre>
+                {{jsonStyle2}}
+            </pre>
+        </p>
+        <h2>URL's</h2>
+        <div class="url-post">
+            <p id="post">POST :</p>
+            <p id="link">"http://asadsasdad.com/buscar"</p>
+        </div>
+    </div>
+</body>
+<footer>
+
+</footer>
+</html>
