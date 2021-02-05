@@ -75,6 +75,9 @@
         <p>
             Welcome, with this API you can optimize the space usage of your trucks trying to reduce the spent fuel. <br>
             Distributing the packages among the trucks maximizing the volume usage.
+            Restrictions:
+            Each package should be accommodated in a single truck.
+            The total weight of the packages in a single truck must not overweight the truck capacity.
         </p>
         <h2>
             Example
@@ -88,11 +91,17 @@
             <pre>
                 {{jsonStyle2}}
             </pre>
+            <p>
+                Information fields: <br>
+                For each truck you have: Capacidad, nombre, identificador and patente. <br>
+                Each marker(destination of the packages) has: id, lat(latitude), lon(longitude) and a list of packages for each destination.
+                Each Package: id, description, weight and volume.
+            </p>
         </p>
         <h2>URL's</h2>
         <div class="url-post">
             <p id="post">POST :</p>
-            <p id="link">"http://asadsasdad.com/buscar"</p>
+            <p id="link">"https://optimization-api.herokuapp.com/buscar"</p>
         </div>
     </div>
 </body>
