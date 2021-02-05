@@ -1,0 +1,107 @@
+<div id="container">
+    <div class="dots" id="dot1"></div>
+    <div class="dots" id="dot2"></div>
+    <div class="dots" id="dot3"></div>
+    <div class="nav_bar">
+        <div>
+            <img src="../assets/logoptimus.png" alt="Optimus Prime">
+        </div>   
+    </div>
+    <div class="introduction">
+        <div id="presentation">
+            <h2>Instrucciones de Uso</h2>
+            <p>
+                En el mapa debe seleccionar las locaciones donde entregar cada paquete. <br> 
+                Debe indicar la sucursal de salida. <br>
+                Debe añadir los camiones disponibles para realizar entregas. <br>
+                Una vez cargados los datos debe apretar el boton <span>Optimizar</span>
+            </p>
+        </div>
+        <div id="image">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cartoon_Courier_Man_Delivering_Packages.svg/471px-Cartoon_Courier_Man_Delivering_Packages.svg.png" alt="Optimus Prime">
+          <!--https://www.pikpng.com/pngl/b/484-4849485_packaging-vector-cardboard-cartoon-cardboard-box-png-clipart.png-->
+          <!--https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cartoon_Courier_Man_Delivering_Packages.svg/471px-Cartoon_Courier_Man_Delivering_Packages.svg.png-->
+        </div>
+    </div>
+    <button mat-raised-button class="primary-button" href="localhost:4200/optimizar">Comenzar</button>
+</div>
+
+<!-- 
+{
+    "trucks":[
+        {
+            "id":1,
+            "name":"mionca",
+            "capacity":1000
+        },
+        {
+            "id":2,
+            "name":"mioncaSCANIA2",
+            "capacity":1300
+        }
+    ],
+    "markers":[
+        {
+            "id":1,
+            "lat":31.3443,
+            "lon":54.654,
+            "packages":[
+                {
+                    "id":1,
+                    "description":"que se yo, este attrib no se si lo vamos a poner",
+                    "weight":20,
+                    "volume":50
+                },
+                {
+                    "id":2,
+                    "description":"que se yo, este attrib no se si lo vamos a poner",
+                    "weight":30,
+                    "volume":60
+                }
+            ]
+        },
+        {
+            "id":2,
+            "lat":36.3443,
+            "lon":57.654,
+            "packages":[
+                {
+                    "id":9,
+                    "description":"que se yo, este attrib no se si lo vamos a poner",
+                    "weight":35,
+                    "volume":90
+                },
+                {
+                    "id":10,
+                    "description":"que se yo, este attrib no se si lo vamos a poner",
+                    "weight":22,
+                    "volume":345
+                }
+            ]
+        }
+        
+    ]
+}
+
+
+
+
+{
+    "Vol_Total_Usado": 1355.0,
+    "peso_total": 91,
+    "camiones": [
+        {
+            "id": 1,
+            "capacidad": 1000,
+            "dinero_recaudado": 910,
+            "packages": [
+                { "id": 1, "weight": 20, "volume": 50, "lat": 31.3443, "lon": 54.654 },
+                { "id": 2, "weight": 30, "volume": 60, "lat": 31.3443, "lon": 54.654 },
+                { "id": 9, "weight": 19, "volume": 900, "lat": 36.3443, "lon": 57.654 },
+                { "id": 10, "weight": 22, "volume": 345, "lat": 36.3443, "lon": 57.654 }
+            ]
+        },
+        { "id": 2, "capacidad": 1300, "dinero_recaudado": 0, "packages": [] }
+    ]
+}
+ -->

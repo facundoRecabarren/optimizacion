@@ -142,7 +142,7 @@ def buscar(request: HttpRequest):
         no_empacado = []
         for i in rango_paquete:
             if sum(x[i,j].solution_value() for j in rango_camion) == 0:
-                lista_paq={'id':lista_paquetes[i].id,'weight':lista_paquetes[i].peso,'volume':lista_paquetes[i].volumen, 'description':lista_paquetes[i].descripcion}
+                lista_paq={'id':lista_paquetes[i].id,'weight':lista_paquetes[i].peso,'volume':lista_paquetes[i].volumen, 'description':lista_paquetes[i].descripcion,'lat':lista_paquetes[i].latitud,'lon':lista_paquetes[i].longitud}
                 no_empacado.append(lista_paq)
 
         devolucion['peso_total'] = peso_total

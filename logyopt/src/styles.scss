@@ -1,0 +1,375 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./theme.scss";
+@import "~leaflet/dist/leaflet.css";
+
+@import "~leaflet-routing-machine/dist/leaflet-routing-machine.css";
+
+html {
+    background: #eee;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.appcontainer {
+    height: 100vh;
+    width: 100%;
+}
+
+/* ======= */
+/* TITULOS */
+/* ======= */
+
+//cardtitle
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+    color: $gray;
+    margin: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+/* ======= */
+/* TITULOS */
+/* ======= */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* ======= */
+/* COLORES */
+/* ======= */
+
+.primary-button {
+    background-color: $primary-color;
+    color: white;
+}
+
+.cancel-button {
+    background-color: $details-color;
+    margin-right: 10px;
+    color: $gray;
+}
+
+$details-color: #cecece;
+
+.back {
+    background: $back-color;
+}
+
+$placeholder: rgba(255, 255, 255, 0.342);
+
+/* ======= */
+/* COLORES */
+/* ======= */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* ================================= */
+/* BASE DE COMPONENTES Y FORMULARIOS */
+/* ================================= */
+
+//CONTENIDO DE COMPONENTE
+.component-content {
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+//CONTENIDO DE FORMULARIO
+.form-content {
+    width: 500px;
+    color: #eee;
+}
+
+.form-content-medium {
+    width: 800px;
+    color: #eee;
+}
+
+.mini-form-content {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background-color: $black-100;
+    color: #eee;
+    overflow: hidden;
+}
+
+.content-card {
+    width: 100%;
+    background-color: $black-50;
+    color: $details-color;
+    border-radius: 5px;
+    border-top: 2px solid $primary-color;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+    box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+    margin-bottom: 10px;
+}
+
+.content-card:last-child {
+    margin-bottom: 0px !important;
+}
+
+.last {
+    margin-bottom: 0px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-pad {
+    padding: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+}
+.item-row {
+    padding: 10px;
+    background-color: white;
+    margin: 2px;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: $gray;
+}
+
+.item-info {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom: 1px solid $almost-gray;
+    padding: 10px;
+    margin: 2px;
+    justify-content: space-between;
+    align-items: center;
+    color: $gray;
+    .det-title {
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+
+.icon-title-description-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-top: 2px solid rgb(35, 177, 200);
+    border-radius: 5px 5px 0px 0px;
+    background-color: white;
+
+    .icon {
+        display: flex;
+        align-items: center;
+
+        i {
+            font-size: 40px;
+            color: $primary-color;
+        }
+    }
+
+    .title-description {
+        padding-left: 7px;
+
+        h2 {
+            padding: 0;
+            padding-bottom: 3px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+            color: $details-hold;
+        }
+    }
+}
+/* ================================= */
+/* BASE DE COMPONENTES Y FORMULARIOS */
+/* ================================= */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* =========================================== */
+/* MAIN CONTAINERS DE COMPONENTE Y FORMULARIOS */
+/* =========================================== */
+
+//COMPONENT MAIN CONTAINER
+.component-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: $black-100;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.32);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    //HEADER MAIN CONTAINER
+    .mc-header {
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 5px 5px 0px 0px;
+        background: $black-50;
+        border-top: $primary-color 2px solid;
+        -webkit-box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+        -moz-box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+        box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+    }
+
+    //CONTENIDO MAIN CONTAINER
+    .mc-content-container {
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* =========================================== */
+/* MAIN CONTAINERS DE COMPONENTE Y FORMULARIOS */
+/* =========================================== */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+/* ============== */
+/* BUTTONS - FORM */
+/* ============== */
+.buttons-container {
+    border-radius: 0px 0px 5px 5px;
+    background: $black-50;
+    padding: 10px;
+    border-bottom: 2px solid $primary-color;
+    box-shadow: 2px 2px 2px 1px rgba(13, 12, 13, 0.32);
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+
+.buttons {
+    width: auto;
+    display: flex;
+    margin-left: auto;
+}
+/* ============== */
+/* BUTTONS - FORM */
+/* ============== */
+
+/* ----------------------------------------------------------------------------------------------------------------- */
+
+/* ============ */
+/* FLEX CLASSES */
+/* ============ */
+
+.d-flex {
+    display: flex;
+}
+
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============ */
+/* FLEX CLASSES */
+/* ============ */
+
+.table-header {
+    margin: 2px;
+    padding: 7px;
+    padding-left: 10px;
+    background-color: $primary-color;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    div {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .name {
+        width: 60.5%;
+    }
+}
+
+/* ===== */
+/* OTROS */
+/* ===== */
+
+.mat-dialog-container {
+    padding: 0 !important;
+}
+
+/* ===== */
+/* OTROS */
+/* ===== */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    animation-name: spin;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.mat-tab-header {
+    margin: 10px 10px 0px 10px;
+    border-top: 2px solid $primary-color;
+    border-radius: 5px 5px 0px 0px;
+    background: $black-50;
+    border-top: $primary-color 2px solid;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(13, 12, 13, 0.62);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(13, 12, 13, 0.62);
+    box-shadow: 1px 1px 1px 1px rgba(13, 12, 13, 0.62);
+
+    .mat-tab-label {
+        color: white;
+    }
+
+    mat-ink-bar {
+        background-color: $primary-color;
+    }
+}
+
+@media (max-width: 1024px) {
+    .form-content-medium {
+        width: auto;
+    }
+
+    .section-content{
+        flex-direction: column;
+    }
+}
+
+//PRELOAD

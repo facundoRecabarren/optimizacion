@@ -1,0 +1,17 @@
+.cancel-button {
+    margin-right: 10px;
+}
+
+.capacity {
+    width: 20%;
+}
+
+.name {
+    width: 77%;
+}
+
+@media (max-width: 1024px) {
+    .name, .capacity {
+        width: auto;
+    }
+}

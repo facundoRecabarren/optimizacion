@@ -1,0 +1,18 @@
+<div class="form-content">
+    <div class="component-main-container">
+        <h2 class="mc-header">Eliminar {{type}}</h2>
+        <div class="mc-content-container" style="flex-direction: column;">
+            <div class="content-card" style="border-radius: inherit;border-top:none">
+                <p class="parrafo">
+                    Está seguro que desea eliminar <strong>{{text}}</strong>?
+                </p>
+            </div>
+            <div class="buttons-container">
+                <div class="buttons" style="width:auto">
+                    <button type="button" mat-button class="cancel-button" (click)="close()">Cancelar</button>
+                    <button type="button" mat-button class="primary-button" (click)="eliminar()">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
