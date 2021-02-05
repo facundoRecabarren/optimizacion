@@ -21,4 +21,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',saludo),
     path('buscar/',csrf_exempt(buscar)),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
