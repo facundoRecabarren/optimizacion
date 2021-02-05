@@ -69,7 +69,7 @@ ROOT_URLCONF = 'optimizacion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/Facundo/Desktop/DjangoP/optimizacion/optimizacion/plantillas'],
+        'DIRS': [os.path.join(BASE_DIR, 'optimizacion/plantillas')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
