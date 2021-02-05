@@ -19,6 +19,6 @@ from optimizacion.views import saludo,buscar
 from django.views.decorators.csrf import csrf_exempt
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/',saludo),
+    path('',saludo),
     path('buscar/',csrf_exempt(buscar)),
 ]
